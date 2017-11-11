@@ -32,7 +32,7 @@ After starting, the rails application will be accessible on default port 3000.(T
 
 The app is publishing one endpoint /pages and it is accepting two types of calls.
 
-###GET /pages
+##GET /pages
 
 This request will return already parsed pages. The result will look like this:
 
@@ -46,7 +46,7 @@ This request will return already parsed pages. The result will look like this:
         ]
      }]
 
-POST /pages
+##POST /pages
 
 This request is for doing HTML pages parsing. The post requires *url* param. The URL parameter must be valid URL and start with http or https.
 
