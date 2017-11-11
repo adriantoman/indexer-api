@@ -12,13 +12,13 @@ Before running the application you need to install all dependent gems. Run this 
 
     bundle install
 
-###Database creation
+### Database creation
 
 Before running the APP for the first time, database need to be created. Do it by running this command:
     
     rails db:migrate
 
-###Running the APP
+### Running the APP
 
 Now you can simply start the Rails server by typing. 
     
@@ -26,13 +26,13 @@ Now you can simply start the Rails server by typing.
     
 This will start the rails in development mode, but for testing purposes it is enough.
 
-#How it works
+# How it works
 
 After starting, the rails application will be accessible on default port 3000.(This can be change by PORT enviroment variable).
 
 The app is publishing one endpoint /pages and it is accepting two types of calls.
 
-##GET /pages
+## GET /pages
 
 This request will return already parsed pages. The result will look like this:
 
@@ -46,7 +46,7 @@ This request will return already parsed pages. The result will look like this:
         ]
      }]
 
-##POST /pages
+## POST /pages
 
 This request is for doing HTML pages parsing. The post requires *url* param. The URL parameter must be valid URL and start with http or https.
 
